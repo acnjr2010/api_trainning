@@ -46,6 +46,6 @@ class Api::V1::PeopleController < ApplicationController
     end
 
     def api_v1_person_params
-      params.require(:person).permit(:name, :local, :hability, :obs)
+      params.require(:person).permit(:name, :local, :hability, :local, :obs)
     end
 end
